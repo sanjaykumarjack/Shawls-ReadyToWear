@@ -1,0 +1,72 @@
+﻿
+@model Shawls_ReadyToWear.Models.ShawlTitleViewModel
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>SHAWLS</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<form asp-controller="Shawls" asp-action="Index">
+    <p>
+        <select asp-for="Title" asp-items="Model.Title">
+            <option value="">All</option>
+        </select>
+
+        Title: <input type="text" asp-for="SearchString" />
+    </p>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Shawls![0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Shawls![0].Material)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Shawls![0].Colour)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Shawls![0].Size)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Shawls![0].Price)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Shawls!)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Material)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Colour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Size)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
