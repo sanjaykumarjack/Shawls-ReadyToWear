@@ -14,11 +14,9 @@
 
 <form asp-controller="Shawls" asp-action="Index">
     <p>
-        <select asp-for="Title" asp-items="Model.Title">
-            <option value="">All</option>
-        </select>
-
+       
         Title: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Search" />
     </p>
 </form>
 <table class="table">
