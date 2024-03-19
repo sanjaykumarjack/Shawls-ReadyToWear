@@ -68,4 +68,33 @@ Duration: 60 Minutes
 Identified and resolved any database-related errors or inconsistencies, ensuring data integrity and reliability within the web application.
 >Navigation Enhancement:
 Implemented a new and improved navigation system within the website to enhance user accessibility and streamline access to products or services.
-   
+
+
+
+Tuesday, 2024-03-05 16:00
+Duration: 90 Minutes
+
+>Authentication Start
+Vamsi Started to try build with authentication
+Vamsi began integrating authentication features into the project to enable secure user access.
+
+
+Tuesday, 2024-03-12 13:00
+Duration: 120 Minutes
+
+> Sanjay continued the authentication process
+Sanjay proceeded with refining and extending the authentication implementation, ensuring robust user authentication.
+
+
+Wednesday, 2024-03-13 17:00
+Duration: 80 Minutes
+
+>  Siddharth Worked on deployment of the website
+ Siddharth managed the deployment process, preparing the website for production on Azure.
+
+
+Friday, 2024-03-15 13:00
+Duration: 120 Minutes
+
+> All the group members have deployed it to azure with 2 working links
+All group members successfully deployed the website to Azure, providing two accessible links for users.
